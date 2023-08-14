@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+
+# Run this before you deploy it on replicate
+import os
+import sys
+import torch
+
+# append project directory to path so predict.py can be imported
+# sys.path.append('.')
+# from predict import MODEL_NAME, REFINER_MODEL_CACHE
+
+# Make cache folders
+if not os.path.exists("cache"):
+    os.makedirs("cache")
+
+os.system("cd cache && wget  https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_large_caption.pth")
