@@ -9,7 +9,7 @@ build:
     - "fairscale==0.4.13"
     - "open_clip_torch==2.20.0"
     
-  run:
-  - git clone https://github.com/salesforce/BLIP /root/blip
+  # run:
+  # - git clone https://github.com/salesforce/BLIP /src/blip
 
 predict: "predict.py:Predictor"

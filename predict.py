@@ -3,7 +3,7 @@ from PIL import Image
 from cog import BasePredictor, Input, Path
 from clip_interrogator import Interrogator, Config
 
-sys.path.append('/root/blip')
+sys.path.append('/src/blip')
 
 class Predictor(BasePredictor):
     def setup(self):

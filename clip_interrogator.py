@@ -53,7 +53,7 @@ class Interrogator():
             if not config.quiet:
                 print("Loading BLIP model...")
             blip_path = os.path.dirname(inspect.getfile(blip_decoder))
-            configs_path = os.path.join(os.path.dirname(blip_path), 'configs')
+            configs_path = os.path.join(os.path.dirname(blip_path), 'blip/configs')
             med_config = os.path.join(configs_path, 'med_config.json')
             blip_model = blip_decoder(
                 pretrained=config.blip_model_url,
